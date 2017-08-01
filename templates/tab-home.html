@@ -1,0 +1,37 @@
+<ion-view view-title="homeboard">
+  <ion-content class="padding">
+  <ion-list>
+			<ion-item ng-click="logout()"  style="text-align: center"  ng-if="myuserdata.isSignedIn">
+				<h2>Logout</h2>
+			</ion-item>
+			<ion-item class="item " style="text-align: center"  ng-if="myuserdata.email">
+				<h2>Already Logged in as {{myuserdata.email}}</h2>
+			</ion-item>
+	</ion-list>
+		
+    <div class="list card">
+      <div class="item item-divider">Recent Event Updates</div>
+      <div class="item item-body">
+        <div>
+          There is a Angular.js training in <b>sector 3</b>
+        </div>
+      </div>
+    </div>
+    <div class="list card">
+      <div class="item item-divider">Alert</div>
+      <div class="item item-body">
+        <div>
+          A user has comented on your event.
+        </div>
+      </div>
+    </div>
+    <div class="list card">
+      <div class="item item-divider">Upcoming</div>
+      <div class="item item-body">
+        <div>
+          You have <b>29</b> meetings on your calendar tomorrow.
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>
